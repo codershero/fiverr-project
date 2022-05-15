@@ -1,0 +1,102 @@
+.our_work_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .main_portfolio_container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 8rem;
+    .header {
+      text-align: center;
+      h1 {
+        width: 75%;
+        font-size: 60px;
+        margin: 0 auto;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+      }
+      p {
+        width: 70%;
+        display: block;
+        font-family: "Poppins";
+        margin: 0 auto;
+      }
+    }
+    .content {
+      padding: 10rem 1rem;
+      .portfolio_cards {
+        position: relative;
+        height: 500px;
+        border-radius: 30px;
+        img {
+          border-radius: 30px;
+        }
+        @media only screen and (min-width: 600px) {
+          height: 750px;
+        }
+        .cards_present {
+          padding: 0rem 2rem;
+          text-align: center;
+          position: absolute;
+          top: 30%;
+          h2 {
+            width: 70%;
+            color: #ffffff;
+            padding-bottom: 3rem;
+            line-height: 75px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards_present {
+    top: 15% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main_portfolio_container {
+    padding-top: 0 !important;
+    .header {
+      text-align: start !important;
+      padding: 0 1rem !important;
+      h1 {
+        width: 100% !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
+      }
+      p {
+        width: 100% !important;
+      }
+    }
+    .content {
+      padding: 2rem 1rem !important;
+
+      .cards_present {
+        top: 30% !important;
+        bottom: 50% !important;
+        width: 100%;
+        h2 {
+          line-height: 45px !important;
+          width: 100% !important;
+          padding-bottom: 1rem !important;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cards_present {
+    top: 20% !important;
+    h2 {
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.product_detail_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  .product_detail_content {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+    padding: 1.5rem;
+    .image_sec {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 2rem;
+      @media only screen and (max-width: 767px) {
+        padding: 0;
+      }
+      .image_container {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+        @media only screen and (max-width: 767px) {
+          height: 600px;
+        }
+        img {
+          @media only screen and (max-width: 767px) {
+            object-fit: contain !important;
+          }
+        }
+      }
+    }
+    .content_sec {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      .selection_pics {
+        position: relative;
+        padding-top: 1rem;
+        @media only screen and (max-width: 767px) {
+          padding-top: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .selected_img {
+          border: 4px solid #ddd087 !important;
+          box-sizing: border-box !important;
+          filter: drop-shadow(0px 5px 15px rgba(7, 7, 7, 0.3)) !important;
+        }
+        span {
+          margin-right: 1rem !important;
+          margin-top: 1rem !important;
+          @media only screen and (max-width: 767px) {
+            margin-right: 0.4rem !important;
+          }
+        }
+      }
+      h2 {
+        color: #070707;
+      }
+      small {
+        color: #070707;
+        padding-right: 8rem;
+        margin-top: 2rem;
+      }
+    }
+    .descriptionDetail {
+      h5 {
+        font-size: 18px;
+      }
+    }
+  }
+  .coverImages {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    span {
+      margin: 3rem 0 !important;
+    }
+  }
+  .recommended_prod_list {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    h2 {
+      color: #070707;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product_detail_container {
+    .product_detail_content {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}

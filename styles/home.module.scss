@@ -1,0 +1,272 @@
+.home_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .hero_header_container {
+    max-width: 100%;
+    min-height: 1200px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // .video {
+    //   video {
+    //     object-fit: cover;
+    //     width: 110%;
+    //     height: 80vh;
+    //     object-position: center;
+    //   }
+    // }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .header_content {
+      position: absolute;
+      z-index: 5;
+      overflow: hidden;
+      padding: 3rem;
+      h1 {
+        color: #fafafa;
+      }
+      p {
+        color: #fafafa;
+        max-width: 70%;
+        margin-top: 2rem;
+      }
+      .btns_container {
+        margin-top: 2rem;
+        height: auto;
+        button {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+  .services_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+    padding: 2rem;
+    h2 {
+      color: #070707;
+    }
+    p {
+      color: #070707;
+      margin-top: 2rem;
+      padding: 1rem 0rem;
+      padding-bottom: 3rem;
+    }
+    .btn_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+  }
+  .our_clients_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    h2 {
+      color: #070707;
+      text-align: center;
+    }
+    a {
+      text-decoration: underline;
+      color: #ddd087;
+    }
+    p {
+      color: #070707;
+      text-align: center;
+      max-width: 70%;
+      margin: 1rem auto;
+      margin-bottom: 4rem;
+    }
+  }
+  .recent_blogs_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 5rem 2rem;
+    h2 {
+      color: #070707;
+    }
+    p {
+      color: #070707;
+      max-width: 70%;
+      margin-top: 1rem;
+      padding-bottom: 3rem;
+    }
+    .blog_list_container {
+      margin-top: 4rem;
+    }
+    .btn_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7rem 0rem;
+    }
+  }
+  .brands_title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 77px;
+  }
+  .view_products_container {
+    max-width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 2rem;
+    .content_container {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: #fafafa;
+        text-align: center;
+      }
+      button {
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home_container {
+    .clients_testimonials_container {
+      .clients_rating {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .hero_header_container {
+      min-height: 900px;
+      margin-top: 0;
+      .video {
+        video {
+          object-fit: cover;
+          width: 100%;
+          height: 80vh;
+          object-position: center;
+        }
+      }
+      .header_content {
+        position: absolute;
+        overflow: hidden;
+        padding: 1rem;
+        h1 {
+          color: #fafafa;
+        }
+        p {
+          color: #fafafa;
+          max-width: 100%;
+          text-align: center;
+          margin-top: 1.5rem;
+        }
+        .btns_container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          height: auto;
+          margin-top: 1.5rem;
+          button {
+            margin-right: 0;
+            margin-top: 1rem;
+          }
+          :first-child {
+            transform: translateX(-25px);
+          }
+          :last-child {
+            transform: translateX(25px);
+          }
+        }
+      }
+    }
+    .services_container {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 4rem;
+      padding: 1rem;
+      h2 {
+        color: #070707;
+      }
+      p {
+        padding: 0 0rem 0 0;
+      }
+      .btn_container {
+        margin-top: 3rem;
+      }
+    }
+    .our_clients_container {
+      p {
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+    .recent_blogs_container {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      h2 {
+        color: #070707;
+      }
+      p {
+        color: #070707;
+        max-width: 100%;
+        margin-top: 1rem;
+      }
+      .btn_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0rem;
+      }
+      .blog_list_container {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

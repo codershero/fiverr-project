@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Disallow: /thank-you
+Allow: /
+
+# Host
+Host: https://jcconstruction.us
+
+# Sitemaps
+Sitemap: https://jcconstruction.us/server-sitemap.xml
+Sitemap: https://jcconstruction.us/sitemap.xml

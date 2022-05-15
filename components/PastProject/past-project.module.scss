@@ -1,0 +1,115 @@
+@keyframes waveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes waveRight {
+  0% {
+    position: absolute;
+    left: 0;
+  }
+  50% {
+    position: absolute;
+    left: 10px;
+  }
+  100% {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.projectVideo {
+  padding: 2rem 0rem;
+  margin-bottom: 2rem;
+  iframe {
+    width: 100%;
+    height: 500px;
+    @media (min-width: 1200px) {
+      height: 800px;
+    }
+  }
+}
+
+.past_project_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #070707;
+  padding-bottom: 3rem;
+  h2 {
+    color: #fafafa !important;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    text-align: left !important;
+  }
+  .scroll_btn_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    small {
+      cursor: pointer;
+      color: #fafafa;
+      margin-left: 1rem;
+    }
+    .rightScrollImage {
+      animation: waveRight 1.8s infinite 1s !important;
+      transform: rotate(180deg);
+      padding: 0 0.4rem !important;
+    }
+    img {
+      cursor: pointer;
+      animation: waveLeft 1.8s infinite 1s;
+      padding-left: 1rem !important;
+    }
+  }
+  .project_images_scroll_container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    margin-top: 2rem;
+    position: relative;
+    &::-webkit-scrollbar {
+      visibility: hidden;
+    }
+    img {
+      width: 340px;
+      height: 450px;
+      transition: 0.5s all ease-in;
+      display: block;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  p {
+    color: #fafafa;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 3rem;
+    }
+  }
+}

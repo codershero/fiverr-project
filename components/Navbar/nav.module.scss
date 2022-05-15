@@ -1,0 +1,44 @@
+.navbar_container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fafafa62;
+  box-shadow: 0px 5px 15px rgba(7, 7, 7, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  .dropdown {
+    small {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .logo_container {
+    background-color: black;
+    height: 100%;
+    width: 250px;
+    margin-left: -2rem;
+    position: relative;
+  }
+  img {
+    cursor: pointer;
+  }
+  small {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #ddd087;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar_container {
+    display: none;
+  }
+}

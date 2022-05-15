@@ -1,0 +1,233 @@
+.footer_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+  z-index: 1;
+  h2 {
+    color: #070707;
+    margin: 3rem 0rem;
+  }
+  .brnads_logo_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .brands_image {
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .sub_brands_image {
+      width: 27%;
+    }
+    .brands_title1 {
+      margin-top: 1.5rem;
+      padding-bottom: 0rem;
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+    .brands_title2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 1rem;
+      h6 {
+        padding-left: 1rem;
+        font-family: "Poppins";
+      }
+    }
+  }
+  .certificate_container {
+    width: 100%;
+    height: 100%;
+    .all_certificate {
+      .certificate {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.5s ease-in;
+        cursor: pointer;
+        margin-top: 1rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+        small {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .footer_links_container {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 2;
+    h4 {
+      color: #070707;
+    }
+    .link_section_special {
+      margin-top: 0;
+      @media only screen and (max-width: 767px) {
+        margin-top: 2.3rem;
+      }
+    }
+    .link_section,
+    .link_section_special {
+      display: flex;
+      flex-direction: column;
+      a {
+        z-index: 10;
+      }
+      small {
+        color: #070707;
+        margin-top: 1.5rem;
+        width: 80%;
+        z-index: 12;
+      }
+      p {
+        color: #070707;
+        font-weight: bold;
+        margin-top: 1rem;
+        transition: 0.4s all ease-in;
+        cursor: pointer;
+        z-index: 999;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: #ddd087;
+          transform: translateX(10px);
+        }
+      }
+      .social_icons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        img {
+          cursor: pointer;
+        }
+      }
+      .btn_container {
+        margin-top: 1.5rem;
+      }
+    }
+    .footer_line {
+      padding-top: 4rem;
+      width: 90%;
+      margin: 0 auto;
+      span {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        cursor: pointer;
+      }
+      small {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer_container {
+    padding: 1rem;
+    h2 {
+      color: #070707;
+    }
+    .brnads_logo_container {
+      justify-content: center;
+      padding: 2rem 0;
+      .sub_brands_image {
+        width: 100%;
+        .brands_title2 {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    }
+    .certificate_container {
+      .all_certificate {
+        .certificate {
+          margin-bottom: 10px;
+          small {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .footer_links_container {
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      h4 {
+        margin-top: 1rem;
+      }
+      .link_section {
+        display: flex;
+        flex-direction: column;
+        small {
+          color: #070707;
+          margin-top: 1rem;
+          width: 100%;
+        }
+        p {
+          color: #070707;
+          font-weight: bold;
+          margin-top: 1rem;
+          cursor: pointer;
+          transition: 0.4s all ease-in;
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #ddd087;
+            transform: translateX(10px);
+          }
+        }
+        .social_icons {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 1.5rem;
+          padding-right: 10px;
+          img {
+            max-width: 30px !important;
+          }
+        }
+        .btn_container {
+          margin-top: 1.5rem;
+        }
+        .brands_image {
+          span {
+            max-width: 150px !important;
+          }
+        }
+        .brands_title1 {
+          margin-top: 2rem;
+          span {
+            max-width: 200px !important;
+          }
+        }
+        .brands_title2 {
+          flex-wrap: wrap;
+          h6 {
+            padding-left: 0;
+            padding-top: 1rem;
+          }
+        }
+      }
+      .footer_line {
+        margin-top: 2rem;
+        padding: 0;
+        width: 100%;
+        small {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

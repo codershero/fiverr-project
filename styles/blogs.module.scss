@@ -1,0 +1,115 @@
+.blogs_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .hero_header_container {
+    max-width: 100%;
+    min-height: 95vh;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+    .header_content {
+      max-width: 100%;
+      z-index: 4;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 3rem;
+      h1 {
+        color: #fafafa;
+      }
+      p {
+        color: #fafafa;
+        max-width: 70%;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .blogs_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+    padding: 5rem 2rem;
+    h2 {
+      color: #070707;
+    }
+    p {
+      color: #070707;
+      max-width: 70%;
+      margin-top: 1rem;
+      padding-bottom: 5rem;
+    }
+    .blog_list_container {
+      margin-top: 4rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blogs_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .hero_header_container {
+      min-height: 75vh;
+      margin-top: 0;
+      padding-top: 120px;
+      .header_content {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 2rem;
+        h1 {
+          color: #fafafa;
+        }
+        p {
+          color: #fafafa;
+          max-width: 100%;
+          text-align: center;
+          margin-top: 2rem;
+        }
+      }
+    }
+    .blogs_container {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 4rem;
+      padding: 1.5rem;
+      h2 {
+        color: #070707;
+      }
+      p {
+        color: #070707;
+        max-width: 100%;
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+      }
+      .blog_list_container {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

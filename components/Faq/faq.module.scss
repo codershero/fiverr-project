@@ -1,0 +1,23 @@
+.faqs_container {
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 5rem auto;
+}
+.question {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.answer {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .faqs_container {
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 5rem auto;
+  }
+}

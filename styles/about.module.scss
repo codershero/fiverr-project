@@ -1,0 +1,202 @@
+.about_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .hero_header_container {
+    max-width: 100%;
+    min-height: 1200px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header_content {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 3rem;
+      h1 {
+        color: #fafafa;
+      }
+      p {
+        color: #fafafa;
+        max-width: 70%;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  .our_mission_container {
+    width: 100%;
+    height: auto;
+    padding: 5rem 7rem;
+    margin-top: 2rem;
+    h2 {
+      color: #070707;
+      text-align: center;
+    }
+    p {
+      color: #070707;
+      text-align: center;
+      max-width: 80%;
+      margin: 2rem auto;
+    }
+    margin-bottom: 5rem;
+  }
+
+  .our_team_container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+    h2 {
+      color: #070707;
+    }
+    .image_section {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 4rem;
+      .image_container {
+        width: 100%;
+        height: 700px;
+        position: relative;
+      }
+    }
+    .content_section {
+      margin-top: 14rem;
+      padding-left: 2rem;
+      p {
+        color: #070707;
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  .about_gallery_container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 8rem;
+    .hero_image_container {
+      max-width: 100%;
+      min-height: 100vh;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .img_sec {
+      width: 100%;
+      height: 740px;
+      position: relative;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .hero_header_container {
+      min-height: 700px;
+      margin-top: 0;
+      padding-top: 120px;
+      .header_content {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 1rem;
+        h1 {
+          color: #fafafa;
+        }
+        p {
+          color: #fafafa;
+          max-width: 100%;
+          text-align: center;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+    .our_mission_container {
+      width: 100%;
+      height: auto;
+      padding: 3rem 2rem;
+      margin-top: 2rem;
+      h2 {
+        color: #070707;
+        text-align: center;
+      }
+      p {
+        color: #070707;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      margin-bottom: 0rem;
+    }
+
+    .our_team_container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      margin-top: 1rem;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      h2 {
+        color: #070707;
+      }
+      .image_section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-top: 2rem;
+        .image_container {
+          width: 100%;
+          height: 500px;
+          position: relative;
+        }
+      }
+      .content_section {
+        margin-top: 0rem;
+        padding-left: 0rem;
+        p {
+          color: #070707;
+          margin-top: 0rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .about_gallery_container {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0rem;
+      .hero_image_container {
+        max-width: 100%;
+        min-height: 70vh;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .img_sec {
+        width: 100%;
+        height: 440px;
+        position: relative;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@keyframes rightScroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes leftScroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.leftScrollClass {
+  animation: leftScroll 0.4s;
+}
+.rightScrollClass {
+  animation: rightScroll 0.4s;
+}
+
+.contact_us_container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  .main_contact_container {
+    height: 100%;
+    width: 100%;
+    background-image: url("../public/images/contact_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .header_section {
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    h1 {
+      color: #070707;
+      text-align: center;
+    }
+  }
+  .contact_form {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    form {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10rem;
+    }
+    .form_container {
+      width: 40%;
+      height: auto;
+      padding-bottom: 4rem;
+      @media only screen and (max-width: 767px) {
+        width: 90%;
+      }
+      .back_btn_container {
+        img {
+          cursor: pointer;
+        }
+      }
+      .custom_input_container {
+        width: 100%;
+        margin-top: 20px;
+        span {
+          font-family: "Poppins";
+        }
+        .error_message {
+          color: rgb(209, 8, 8);
+        }
+      }
+      .btn_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        flex-direction: column;
+        a {
+          justify-self: center;
+          align-self: center;
+          width: 225px;
+          margin-top: 1rem;
+        }
+      }
+      .submit_form_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+    }
+  }
+}

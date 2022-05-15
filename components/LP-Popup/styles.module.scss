@@ -1,0 +1,103 @@
+$black: #070707;
+$white: #e1e1e1;
+
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1200px;
+
+.modal {
+  position: fixed;
+  box-shadow: 0px -2px 20px rgba(7, 7, 7, 0.3);
+  width: 100%;
+  height: 75vh;
+  overflow-y: scroll;
+  z-index: 100;
+  bottom: 0;
+  color: $black;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .close {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    svg {
+      fill: $black;
+      height: 100px;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+  .form {
+    padding: 0rem 2rem;
+    height: 85%;
+    width: 100%;
+    align-self: center;
+    h2 {
+      padding-top: 2rem;
+    }
+    .inputs {
+      label {
+        color: $black;
+      }
+      .formName,
+      .formEmail,
+      .formNumber {
+        margin-top: 1.5rem;
+        input {
+          color: $black;
+          border-bottom: 2px solid $white;
+        }
+      }
+    }
+    .button {
+      width: 100%;
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      button {
+        width: 100%;
+        font-size: 25px;
+        text-transform: inherit;
+      }
+    }
+    @media (min-width: $tablet) {
+      h2 {
+        margin-left: 2rem;
+      }
+      form {
+        padding: 3rem 2rem;
+      }
+    }
+  }
+  @media (min-width: $tablet) {
+    .button {
+      margin-top: 1rem;
+    }
+    .close {
+      top: 2rem;
+      svg {
+        width: 50%;
+      }
+    }
+  }
+  @media (min-width: $desktop) {
+    .close {
+      svg {
+        width: 40%;
+      }
+    }
+  }
+}
+.modal::-webkit-scrollbar {
+  display: none;
+}

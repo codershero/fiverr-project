@@ -1,0 +1,157 @@
+.blog_detail_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .header_container {
+    margin-top: 140px;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    h1 {
+      color: #070707;
+      text-align: center;
+    }
+  }
+  .author_details {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    .image_sec {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin: 4rem 0rem;
+      .img_container {
+        width: 100%;
+        height: 500px;
+      }
+    }
+    .content_sec {
+      margin-top: 2rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      p {
+        color: #000000;
+        margin-top: 2rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+  .blog_content {
+    max-width: 85%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    h2 {
+      color: #000000;
+      margin-bottom: 4rem;
+    }
+    .blog_sanity_content {
+      margin-top: 4rem;
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      p {
+        color: #000000;
+      }
+      .sanity_img_container {
+        max-width: 100%;
+        height: 700px;
+        margin: 3rem 0rem;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blog_detail_container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .header_container {
+      margin-top: 0;
+      padding-top: 120px;
+      margin-bottom: 2rem;
+      h1 {
+        color: #070707;
+        text-align: center;
+      }
+    }
+    .author_details {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 2rem;
+      .image_sec {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-top: 2rem;
+
+        .img_container {
+          width: 100%;
+          height: 350px;
+        }
+      }
+      .content_sec {
+        p {
+          color: #000000;
+          margin-top: 2rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+    .blog_content {
+      max-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      h2 {
+        color: #000000;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+      .blog_sanity_content {
+        margin-top: 0rem;
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        h2 {
+          font-size: 2.375rem;
+          line-height: 1.2;
+          margin-bottom: 3rem;
+        }
+        ol {
+          padding-inline-start: 0px;
+        }
+        p {
+          color: #000000;
+        }
+        .sanity_img_container {
+          max-width: 100%;
+          height: 600px;
+          position: relative;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
